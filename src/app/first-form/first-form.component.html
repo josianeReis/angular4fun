@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-content>
+    <section>
+      <mat-form-field>
+        <input matInput placeholder="First Name" value='' name='name' [(ngModel)]='firstName'>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Last Name" value='' name='lastname' [(ngModel)]='lastName'>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Age" value='' name='age' [(ngModel)]='age'>
+      </mat-form-field>
+    </section>
+    <mat-radio-group [(ngModel)]="myColor" name="mycolor">
+      <button class="baseButton" mat-flat-button color="primary" (click)="save()">Salvar</button>
+      <button class="baseButton" mat-flat-button color="primary" (click)="cancel()">Cancelar</button>
+    </mat-radio-group>
+  </mat-card-content>
+  <mat-card-footer>
+  </mat-card-footer>
+</mat-card>
+<mat-card>
+    <mat-card-content>
+      <mat-list>
+        <h3 matSubHeader>Names</h3>
+        <mat-list-item *ngFor="let client of clients; let i=index">
+         <p>Cliente: {{ client.firstName}} {{ client.lastName}}, {{ client.age}}</p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-footer>
+    </mat-card-footer>
+  </mat-card>

@@ -1,0 +1,13 @@
+mat-card {
+  margin: 30px;
+  /* width: 500px; */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+.baseButton {
+  margin-right: 15px;
+}
+
