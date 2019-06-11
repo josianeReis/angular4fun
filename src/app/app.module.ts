@@ -27,6 +27,11 @@ import { FirstFormComponent } from './first-form/first-form.component';
 import { FirstSwitchComponent } from './first-switch/first-switch.component';
 import { FirstTemplateComponent } from './first-template/first-template.component';
 import { FirstContainerComponent } from './first-container/first-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { InputBindingComponent } from './input-binding/input-binding.component';
+import { ClientComponent } from './input-binding/client/client.component';
+import { EventComponent } from './event/event.component';
+import { FirstEventComponent } from './first-event/first-event.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { FirstContainerComponent } from './first-container/first-container.compo
     FirstFormComponent,
     FirstSwitchComponent,
     FirstTemplateComponent,
-    FirstContainerComponent
+    FirstContainerComponent,
+    NgContentComponent,
+    InputBindingComponent,
+    ClientComponent,
+    EventComponent,
+    FirstEventComponent
   ], 
   imports: [
     BrowserModule,
