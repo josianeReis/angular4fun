@@ -5,11 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './first-event.component.html',
   styleUrls: ['./first-event.component.css']
 })
-export class FirstEventComponent implements OnInit {
 
+export class FirstEventComponent implements OnInit {
+  value: number = 0;
+  title = 'my title';
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  incBy(event) {
+    this.value+= event;
   }
 
 }

@@ -30,8 +30,8 @@ import { FirstContainerComponent } from './first-container/first-container.compo
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { InputBindingComponent } from './input-binding/input-binding.component';
 import { ClientComponent } from './input-binding/client/client.component';
-import { EventComponent } from './event/event.component';
 import { FirstEventComponent } from './first-event/first-event.component';
+import { ChildEventComponent } from './first-event/child-event/child-event.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +49,8 @@ import { FirstEventComponent } from './first-event/first-event.component';
     NgContentComponent,
     InputBindingComponent,
     ClientComponent,
-    EventComponent,
-    FirstEventComponent
+    FirstEventComponent,
+    ChildEventComponent
   ], 
   imports: [
     BrowserModule,
