@@ -7,6 +7,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 import {
   MatRadioModule,
   MatListModule,
@@ -32,6 +34,7 @@ import { InputBindingComponent } from './input-binding/input-binding.component';
 import { ClientComponent } from './input-binding/client/client.component';
 import { FirstEventComponent } from './first-event/first-event.component';
 import { ChildEventComponent } from './first-event/child-event/child-event.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,8 @@ import { ChildEventComponent } from './first-event/child-event/child-event.compo
     InputBindingComponent,
     ClientComponent,
     FirstEventComponent,
-    ChildEventComponent
+    ChildEventComponent,
+    ClientsComponent
   ], 
   imports: [
     BrowserModule,
@@ -66,6 +70,7 @@ import { ChildEventComponent } from './first-event/child-event/child-event.compo
     MatListModule,
     MatIconModule,
     MatProgressBarModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
