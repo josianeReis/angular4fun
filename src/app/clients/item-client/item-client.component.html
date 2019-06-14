@@ -1,6 +1,6 @@
 <mat-card>
   <mat-card-content>
-    <section>
+    <section *ngIf="onEdit">
       <mat-form-field>
         <input matInput placeholder="First name" [(ngModel)]="name">
       </mat-form-field>
@@ -11,7 +11,14 @@
         <mat-icon (click)="save()">check</mat-icon>
       </button>
     </section>
+    <section *ngIf="!onEdit">
+      {{client.name}}/{{client.age}}
+      <button mat-icon-button color="primary" (click)="edit()">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" (click)="remove()">
+        <mat-icon>trash</mat-icon>
+      </button>
+    </section>
   </mat-card-content>
 </mat-card>
-
-<app-item-client *ngFor="let c of clients" [client]="c"></app-item-client> 

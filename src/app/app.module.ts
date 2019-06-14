@@ -35,6 +35,7 @@ import { ClientComponent } from './input-binding/client/client.component';
 import { FirstEventComponent } from './first-event/first-event.component';
 import { ChildEventComponent } from './first-event/child-event/child-event.component';
 import { ClientsComponent } from './clients/clients.component';
+import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { ClientsComponent } from './clients/clients.component';
     ClientComponent,
     FirstEventComponent,
     ChildEventComponent,
-    ClientsComponent
+    ClientsComponent,
+    ItemClientComponent
   ], 
   imports: [
     BrowserModule,
